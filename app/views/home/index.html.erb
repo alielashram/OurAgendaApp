@@ -1,1 +1,15 @@
 <p id="p_HTML">Hello World</p>
+<p id="p_CSS"></p>
+<p id="p_JavaScript">
+  <script type="text/javascript">
+    document.write("Hello World"); 
+  </script>
+<p id="p_jQuery"></p>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#p_jQuery").text("Hello World")
+  });
+</script>
+<p id="p_CoffeeScript"></p>
+<% user = User.first %> 
+<p id="p_Rails"><%= user.first_name %> <%= user.last_name %> </p>
