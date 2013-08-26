@@ -13,3 +13,10 @@
 <p id="p_CoffeeScript"></p>
 <% user = User.first %> 
 <p id="p_Rails"><%= user.first_name %> <%= user.last_name %> </p>
+<p id="p_JSON"></p>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var user = <%=raw user.to_json %>; 
+    $("#p_JSON").text(user["first_name"] + " " + user["last_name"]);
+  });
+</script>
